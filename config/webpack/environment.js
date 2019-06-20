@@ -1,7 +1,7 @@
-const { environment } = require('@rails/webpacker')
+const { environment }           = require('@rails/webpacker')
 const { AngularCompilerPlugin } = require('@ngtools/webpack')
-const angular         =  require('./loaders/angular')
-
+const { BundleAnalyzerPlugin }  = require('webpack-bundle-analyzer')
+const angular                   = require('./loaders/angular')
 
 environment.loaders.prepend('angular', angular)
 environment.plugins.prepend('angular',
@@ -11,5 +11,6 @@ environment.plugins.prepend('angular',
     sourceMap: true
   })
 )
+environment.plugins.append('BundleAnalyzer', new BundleAnalyzerPlugin())
 
 module.exports = environment
