@@ -36,6 +36,7 @@ default: &default
   extensions:
     - .tsx
     - .ts
+    #- .ts.ngfactory
     - .mjs
     - .js
     - .sass
