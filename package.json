@@ -4,7 +4,7 @@
   "dependencies": {
     "@angular/common": "^8.0.2",
     "@angular/compiler": "^8.0.2",
-    "@angular/compiler-cli": ">=8.0.0-beta.0 < 9.0.0",
+    "@angular/compiler-cli": "^8.0.2",
     "@angular/core": "^8.0.2",
     "@angular/platform-browser": "^8.0.2",
     "@angular/platform-browser-dynamic": "^8.0.2",

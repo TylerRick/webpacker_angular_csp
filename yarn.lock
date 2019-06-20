@@ -20,7 +20,7 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/compiler-cli@>=8.0.0-beta.0 < 9.0.0":
+"@angular/compiler-cli@^8.0.2":
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/@angular/compiler-cli/-/compiler-cli-8.0.2.tgz#0afe0d1ae02d74f6a470cdd534f2be5ee1ef466b"
   integrity sha512-9jdpB8WC47oSgQ/jA+ExTYqbe4xw3ZCEhgLhPd8BQukBOHodaIHKnkinrVJAPZORpY1CKRaImoAHieSvRhiPjA==
