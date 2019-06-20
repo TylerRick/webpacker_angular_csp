@@ -11,6 +11,6 @@ environment.plugins.prepend('angular',
     sourceMap: true
   })
 )
-environment.plugins.append('BundleAnalyzer', new BundleAnalyzerPlugin())
+//environment.plugins.append('BundleAnalyzer', new BundleAnalyzerPlugin())
 
 module.exports = environment
