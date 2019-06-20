@@ -19,8 +19,5 @@
     "vendor",
     "public"
   ],
-  "compileOnSave": false,
-  "angularCompilerOptions": {
-    "skipMetadataEmit": true
-  }
+  "compileOnSave": false
 }
