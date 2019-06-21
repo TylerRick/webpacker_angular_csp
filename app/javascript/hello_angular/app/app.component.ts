@@ -1,10 +1,8 @@
 import { Component } from '@angular/core';
-import templateString from './template.html'
-console.log("templateString=", templateString);
 
 @Component({
   selector: 'hello-angular',
-  template: templateString
+  templateUrl: 'template.html'
 })
 export class AppComponent {
   name = 'Angular!';
