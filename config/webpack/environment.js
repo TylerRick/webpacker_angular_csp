@@ -10,7 +10,10 @@ environment.loaders.append('html', html)
 environment.plugins.prepend('angular',
   new AngularCompilerPlugin({
     tsConfigPath: './tsconfig.json',
-    entryModule: './app/javascript/hello_angular/app/app.module.ts#AppModule',
+    entryModules: [
+      './app/javascript/hello_angular/app/app.module.ts#AppModule',
+      './app/javascript/hola_angular/app/app.module.ts#AppModule',
+    ],
     sourceMap: true
   })
 )
