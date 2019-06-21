@@ -2,8 +2,11 @@ const { environment }           = require('@rails/webpacker')
 const { AngularCompilerPlugin } = require('@ngtools/webpack')
 const { BundleAnalyzerPlugin }  = require('webpack-bundle-analyzer')
 const angular                   = require('./loaders/angular')
+const html                      = require('./loaders/html')
 
 environment.loaders.prepend('angular', angular)
+environment.loaders.append('html', html)
+
 environment.plugins.prepend('angular',
   new AngularCompilerPlugin({
     tsConfigPath: './tsconfig.json',
@@ -11,6 +14,7 @@ environment.plugins.prepend('angular',
     sourceMap: true
   })
 )
+
 //environment.plugins.append('BundleAnalyzer', new BundleAnalyzerPlugin())
 
 module.exports = environment
